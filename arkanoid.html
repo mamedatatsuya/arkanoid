@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブロック崩しゲーム</title>
+    <link rel="stylesheet" type="text/css" href="arkanoid.css">
+</head>
+<body>
+	<div class="game">
+	<div class="explain">
+		<---メニュー---><br>P: ポーズ<br>Space: スタート
+	</div>
+	<div class="board">
+		<canvas id="arkanoid" width="640" height="480"></canvas>
+		<a href="javascript:void(0)" onclick="gameReStart();" id="btn" class="btn btn--orange btn--cubic btn--shadow">START</a>
+	</div>
+	
+	</div>
+		<!--上記は<a href="#" onclick="gameReStart();return false;"><span>START</span></a>でもいい-->
+	<script src="arkanoid.js"></script>
+</body>
+</html>
